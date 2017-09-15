@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B78255BA1F6C99EA00DACA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78255B91F6C99EA00DACA73 /* AppDelegate.swift */; };
+		B78255BC1F6C99EA00DACA73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78255BB1F6C99EA00DACA73 /* ViewController.swift */; };
+		B78255BF1F6C99EA00DACA73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78255BD1F6C99EA00DACA73 /* Main.storyboard */; };
+		B78255C21F6C99EA00DACA73 /* TasTrade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B78255C01F6C99EA00DACA73 /* TasTrade.xcdatamodeld */; };
+		B78255C41F6C99EA00DACA73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78255C31F6C99EA00DACA73 /* Assets.xcassets */; };
+		B78255C71F6C99EA00DACA73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78255C51F6C99EA00DACA73 /* LaunchScreen.storyboard */; };
+		B78255CF1F6C9B0300DACA73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B78255CE1F6C9B0300DACA73 /* GoogleService-Info.plist */; };
+		D96634B94D3FD79C3E6D30FD /* Pods_TasTrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CFEA5E76E45320D7A512BB /* Pods_TasTrade.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A6FAE3E0CB15DFBA4322082 /* Pods-TasTrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasTrade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TasTrade/Pods-TasTrade.debug.xcconfig"; sourceTree = "<group>"; };
+		10CFEA5E76E45320D7A512BB /* Pods_TasTrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TasTrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D3B042F482914BE8CEA46CA /* Pods-TasTrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasTrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-TasTrade/Pods-TasTrade.release.xcconfig"; sourceTree = "<group>"; };
+		B78255B61F6C99EA00DACA73 /* TasTrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasTrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78255B91F6C99EA00DACA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B78255BB1F6C99EA00DACA73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B78255BE1F6C99EA00DACA73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B78255C11F6C99EA00DACA73 /* TasTrade.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TasTrade.xcdatamodel; sourceTree = "<group>"; };
+		B78255C31F6C99EA00DACA73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B78255C61F6C99EA00DACA73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B78255C81F6C99EA00DACA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B78255CE1F6C9B0300DACA73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B78255B31F6C99EA00DACA73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96634B94D3FD79C3E6D30FD /* Pods_TasTrade.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C10C54B2E6CA5F9FC58A762 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A6FAE3E0CB15DFBA4322082 /* Pods-TasTrade.debug.xcconfig */,
+				5D3B042F482914BE8CEA46CA /* Pods-TasTrade.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8AFD6C2B7795342F0A73B7B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10CFEA5E76E45320D7A512BB /* Pods_TasTrade.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B78255AD1F6C99EA00DACA73 = {
+			isa = PBXGroup;
+			children = (
+				B78255B81F6C99EA00DACA73 /* TasTrade */,
+				B78255B71F6C99EA00DACA73 /* Products */,
+				6C10C54B2E6CA5F9FC58A762 /* Pods */,
+				8AFD6C2B7795342F0A73B7B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B78255B71F6C99EA00DACA73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B78255B61F6C99EA00DACA73 /* TasTrade.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B78255B81F6C99EA00DACA73 /* TasTrade */ = {
+			isa = PBXGroup;
+			children = (
+				B78255B91F6C99EA00DACA73 /* AppDelegate.swift */,
+				B78255BB1F6C99EA00DACA73 /* ViewController.swift */,
+				B78255BD1F6C99EA00DACA73 /* Main.storyboard */,
+				B78255C31F6C99EA00DACA73 /* Assets.xcassets */,
+				B78255C51F6C99EA00DACA73 /* LaunchScreen.storyboard */,
+				B78255C81F6C99EA00DACA73 /* Info.plist */,
+				B78255CE1F6C9B0300DACA73 /* GoogleService-Info.plist */,
+				B78255C01F6C99EA00DACA73 /* TasTrade.xcdatamodeld */,
+			);
+			path = TasTrade;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B78255B51F6C99EA00DACA73 /* TasTrade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B78255CB1F6C99EA00DACA73 /* Build configuration list for PBXNativeTarget "TasTrade" */;
+			buildPhases = (
+				B640F536394020074920774B /* [CP] Check Pods Manifest.lock */,
+				B78255B21F6C99EA00DACA73 /* Sources */,
+				B78255B31F6C99EA00DACA73 /* Frameworks */,
+				B78255B41F6C99EA00DACA73 /* Resources */,
+				D2B98CCCB56711461277374F /* [CP] Embed Pods Frameworks */,
+				36D39664684EE7356AFBCDF7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TasTrade;
+			productName = TasTrade;
+			productReference = B78255B61F6C99EA00DACA73 /* TasTrade.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B78255AE1F6C99EA00DACA73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Gerry Gao";
+				TargetAttributes = {
+					B78255B51F6C99EA00DACA73 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = AXATP4F2YD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B78255B11F6C99EA00DACA73 /* Build configuration list for PBXProject "TasTrade" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B78255AD1F6C99EA00DACA73;
+			productRefGroup = B78255B71F6C99EA00DACA73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B78255B51F6C99EA00DACA73 /* TasTrade */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B78255B41F6C99EA00DACA73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B78255C71F6C99EA00DACA73 /* LaunchScreen.storyboard in Resources */,
+				B78255CF1F6C9B0300DACA73 /* GoogleService-Info.plist in Resources */,
+				B78255C41F6C99EA00DACA73 /* Assets.xcassets in Resources */,
+				B78255BF1F6C99EA00DACA73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36D39664684EE7356AFBCDF7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TasTrade/Pods-TasTrade-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B640F536394020074920774B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2B98CCCB56711461277374F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TasTrade/Pods-TasTrade-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B78255B21F6C99EA00DACA73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B78255C21F6C99EA00DACA73 /* TasTrade.xcdatamodeld in Sources */,
+				B78255BC1F6C99EA00DACA73 /* ViewController.swift in Sources */,
+				B78255BA1F6C99EA00DACA73 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B78255BD1F6C99EA00DACA73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B78255BE1F6C99EA00DACA73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B78255C51F6C99EA00DACA73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B78255C61F6C99EA00DACA73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B78255C91F6C99EA00DACA73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B78255CA1F6C99EA00DACA73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B78255CC1F6C99EA00DACA73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A6FAE3E0CB15DFBA4322082 /* Pods-TasTrade.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AXATP4F2YD;
+				INFOPLIST_FILE = TasTrade/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartcodeTAS.TasTrade;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B78255CD1F6C99EA00DACA73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D3B042F482914BE8CEA46CA /* Pods-TasTrade.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AXATP4F2YD;
+				INFOPLIST_FILE = TasTrade/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartcodeTAS.TasTrade;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B78255B11F6C99EA00DACA73 /* Build configuration list for PBXProject "TasTrade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B78255C91F6C99EA00DACA73 /* Debug */,
+				B78255CA1F6C99EA00DACA73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B78255CB1F6C99EA00DACA73 /* Build configuration list for PBXNativeTarget "TasTrade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B78255CC1F6C99EA00DACA73 /* Debug */,
+				B78255CD1F6C99EA00DACA73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B78255C01F6C99EA00DACA73 /* TasTrade.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B78255C11F6C99EA00DACA73 /* TasTrade.xcdatamodel */,
+			);
+			currentVersion = B78255C11F6C99EA00DACA73 /* TasTrade.xcdatamodel */;
+			path = TasTrade.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B78255AE1F6C99EA00DACA73 /* Project object */;
+}

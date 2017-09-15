@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>253318421087-doi412q1uktoa1viu3bsi5ovrvpdiodf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.253318421087-doi412q1uktoa1viu3bsi5ovrvpdiodf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDxAFIn489WIPezrdOL1QILF04SLML5Ggk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>253318421087</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.smartcodeTAS.TasTrade</string>
+	<key>PROJECT_ID</key>
+	<string>tas-trade</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tas-trade.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:253318421087:ios:c717ff65270b2bb5</string>
+	<key>DATABASE_URL</key>
+	<string>https://tas-trade.firebaseio.com</string>
+</dict>
+</plist>
