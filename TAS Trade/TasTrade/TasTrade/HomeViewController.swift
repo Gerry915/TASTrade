@@ -19,6 +19,10 @@ class HomeViewController: UIViewController {
         //sadjlkasdj
         //jsahahahahhaha
         //Gerry
+        
+        
+    
+        
     }
 
     override func didReceiveMemoryWarning() {
