@@ -15,11 +15,7 @@ class HomeViewController: UIViewController {
 
 
         // Do any additional setup after loading the view.
-        
-        //asjdklsajdklasdjlkas
-        //sadjlkasdj
-        //jsahahahahhaha
-        //Gerry
+        //1,1,1,1,1,1,
 
     }
 
