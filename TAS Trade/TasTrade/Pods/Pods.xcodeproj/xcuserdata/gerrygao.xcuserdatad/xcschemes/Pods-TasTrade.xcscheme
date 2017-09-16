@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AA358C869C30E445C6F617F3B64B2745"
+               BlueprintIdentifier = "FC80AD4BCD2717BD98EE5890747312F7"
                BuildableName = "Pods_TasTrade.framework"
                BlueprintName = "Pods-TasTrade"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA358C869C30E445C6F617F3B64B2745"
+            BlueprintIdentifier = "FC80AD4BCD2717BD98EE5890747312F7"
             BuildableName = "Pods_TasTrade.framework"
             BlueprintName = "Pods-TasTrade"
             ReferencedContainer = "container:Pods.xcodeproj">
