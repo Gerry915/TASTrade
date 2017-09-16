@@ -14,10 +14,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        //asjdklsajdklasdjlkas
-        //sadjlkasdj
-        //jsahahahahhaha
+        //12345567890-abc
         
     }
 
