@@ -13,9 +13,14 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //12345567890-abc
-        //Lan123457890
+
+        // Do any additional setup after loading the view.
         
+        //asjdklsajdklasdjlkas
+        //sadjlkasdj
+        //jsahahahahhaha
+        //Gerry
+
     }
 
     override func didReceiveMemoryWarning() {
