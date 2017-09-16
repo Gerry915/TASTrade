@@ -13,12 +13,14 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
         // Do any additional setup after loading the view.
         
         //asjdklsajdklasdjlkas
         //sadjlkasdj
         //jsahahahahhaha
         //Gerry
+
     }
 
     override func didReceiveMemoryWarning() {
