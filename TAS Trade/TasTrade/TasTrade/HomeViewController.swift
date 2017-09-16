@@ -13,8 +13,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         //12345567890-abc
+        //Lan123457890
         
     }
 
