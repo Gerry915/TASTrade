@@ -8,32 +8,44 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-
+class HomeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
+    @IBOutlet weak var HomeCollectionView: UICollectionView!
+    
+    let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
+    var categories = ["Rental","xx","xx","yy","sss","ccc","sss1","tt"]
+    let layout = UICollectionViewFlowLayout()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-        // Do any additional setup after loading the view.
-        //1,1,1,1,1,1,
-        //122222222
-
+        HomeCollectionView.delegate = self
+        HomeCollectionView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+//    func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        return 1
+//    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //collectionView.register(HomeCollectionViewCell, forCellWithReuseIdentifier: "cell")
+        // get a reference to our storyboard cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! HomeCollectionViewCell
+        cell.layer.cornerRadius = 8
+        cell.categoryButton.setTitle(categories[indexPath.row], for: .normal)
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("%d", indexPath)
+    }
+    
+    
 }
