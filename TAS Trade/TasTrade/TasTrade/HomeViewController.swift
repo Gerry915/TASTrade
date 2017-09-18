@@ -8,10 +8,12 @@
 
 import UIKit
 
-class HomeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
+class HomeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate, UIScrollViewDelegate {
     @IBOutlet weak var HomeCollectionView: UICollectionView!
+    @IBOutlet weak var HomeScrollView: UIScrollView!
     
-    let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
+    // also enter this string as the cell identifier in the storyboard
+    let reuseIdentifier = "cell"
     var categories = ["Rental","xx","xx","yy","sss","ccc","sss1","tt"]
     let layout = UICollectionViewFlowLayout()
     
@@ -30,7 +32,7 @@ class HomeViewController: UIViewController,UICollectionViewDataSource,UICollecti
 //    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return categories.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -38,14 +40,14 @@ class HomeViewController: UIViewController,UICollectionViewDataSource,UICollecti
         // get a reference to our storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! HomeCollectionViewCell
         cell.layer.cornerRadius = 8
-        cell.categoryButton.setTitle(categories[indexPath.row], for: .normal)
+        cell.categoryButton.setTitle(categories[indexPath.item], for: .normal)
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("%d", indexPath)
+        print("%d", indexPath.row)
     }
     
-    
 }
+
