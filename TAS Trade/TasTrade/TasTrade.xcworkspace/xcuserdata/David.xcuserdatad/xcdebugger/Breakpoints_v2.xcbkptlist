@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TasTrade/HomeViewController.swift"
-            timestampString = "527491413.091848"
+            timestampString = "527496093.546178"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "scrollPage()"
             landmarkType = "7">
          </BreakpointContent>

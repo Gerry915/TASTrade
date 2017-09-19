@@ -8,17 +8,16 @@
 
 import UIKit
 
-class HomeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate, UIScrollViewDelegate {
+class HomeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
     @IBOutlet weak var HomeCollectionView: UICollectionView!
     @IBOutlet weak var HomeScrollView: UIScrollView!
     var timer : Timer!
     var currentPage : Int = 0
-    var imageArray = [#imageLiteral(resourceName: "1"),#imageLiteral(resourceName: "DSC_0334")]
+    var imageArray = [#imageLiteral(resourceName: "1"),#imageLiteral(resourceName: "DSC_0334"),#imageLiteral(resourceName: "DSC_0348")]
     
     // also enter this string as the cell identifier in the storyboard
     let reuseIdentifier = "cell"
     var categories = ["Rental","xx","xx","yy","sss","ccc","sss1","tt"]
-    let layout = UICollectionViewFlowLayout()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +50,22 @@ class HomeViewController: UIViewController,UICollectionViewDataSource,UICollecti
     }
 }
 
+
+extension HomeViewController {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cr = UIScreen.main.bounds.width
+        let wide = cr / 2 - 1
+        return CGSize(width: wide, height: wide)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 1.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 1.0
+    }
+}
 
 extension HomeViewController {
     //scrollbar
