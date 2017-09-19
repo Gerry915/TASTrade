@@ -15,6 +15,7 @@
 		63A5E4BF1F6CC52B00125343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A5E4BD1F6CC52B00125343 /* Main.storyboard */; };
 		63A5E4C51F6CCCE700125343 /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A5E4C41F6CCCE700125343 /* Post.storyboard */; };
 		63A5E4C71F6CCDB600125343 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A5E4C61F6CCDB600125343 /* PostViewController.swift */; };
+		63C04BB71F70D4EB00BB2A8D /* HomeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C04BB61F70D4EB00BB2A8D /* HomeCollectionView.swift */; };
 		63C59AA21F6E734200F713DA /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C59AA11F6E734200F713DA /* HomeCollectionViewCell.swift */; };
 		B78255BA1F6C99EA00DACA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78255B91F6C99EA00DACA73 /* AppDelegate.swift */; };
 		B78255C21F6C99EA00DACA73 /* TasTrade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B78255C01F6C99EA00DACA73 /* TasTrade.xcdatamodeld */; };
@@ -36,6 +37,7 @@
 		63A5E4BE1F6CC52B00125343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63A5E4C41F6CCCE700125343 /* Post.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
 		63A5E4C61F6CCDB600125343 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		63C04BB61F70D4EB00BB2A8D /* HomeCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionView.swift; sourceTree = "<group>"; };
 		63C59AA11F6E734200F713DA /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		B78255B61F6C99EA00DACA73 /* TasTrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasTrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78255B91F6C99EA00DACA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				63C59AA11F6E734200F713DA /* HomeCollectionViewCell.swift */,
+				63C04BB61F70D4EB00BB2A8D /* HomeCollectionView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				63A5E4BC1F6CC1B000125343 /* ProfileViewController.swift in Sources */,
 				63A5E4B81F6CC0A500125343 /* HomeViewController.swift in Sources */,
 				63A5E4C71F6CCDB600125343 /* PostViewController.swift in Sources */,
+				63C04BB71F70D4EB00BB2A8D /* HomeCollectionView.swift in Sources */,
 				B78255C21F6C99EA00DACA73 /* TasTrade.xcdatamodeld in Sources */,
 				B78255BA1F6C99EA00DACA73 /* AppDelegate.swift in Sources */,
 				63A5E4AC1F6CBDCC00125343 /* MainViewController.swift in Sources */,

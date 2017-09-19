@@ -11,10 +11,9 @@ import UIKit
 class HomeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate, UIScrollViewDelegate {
     @IBOutlet weak var HomeCollectionView: UICollectionView!
     @IBOutlet weak var HomeScrollView: UIScrollView!
-
-    private var imageArray = [#imageLiteral(resourceName: "1"),#imageLiteral(resourceName: "DSC_0334")]
-    
-    
+    var timer : Timer!
+    var currentPage : Int = 0
+    var imageArray = [#imageLiteral(resourceName: "1"),#imageLiteral(resourceName: "DSC_0334")]
     
     // also enter this string as the cell identifier in the storyboard
     let reuseIdentifier = "cell"
@@ -25,7 +24,37 @@ class HomeViewController: UIViewController,UICollectionViewDataSource,UICollecti
         super.viewDidLoad()
         HomeCollectionView.delegate = self
         HomeCollectionView.dataSource = self
+        HomeScrollView.delegate = self
         
+        ///scrollbar
+        setUpScrollBar()
+        
+        //run the timer for page turning
+        runTimer()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    //this function will be called when finger up and the scrollbar stop moving in scrollview
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let xPosion = scrollView.contentOffset.x
+        let page = Int(xPosion / self.HomeScrollView.frame.width)
+        currentPage = page
+        runTimer()
+    }
+    
+    //this function will be called when user starting interact with scrollview
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        timer.invalidate()
+    }
+}
+
+
+extension HomeViewController {
+    //scrollbar
+    func setUpScrollBar() -> Void {
         //set up Advertisment scrollbar
         for i in 0..<self.imageArray.count {
             let xPosition = self.view.frame.size.width * CGFloat(i)
@@ -37,30 +66,27 @@ class HomeViewController: UIViewController,UICollectionViewDataSource,UICollecti
             self.HomeScrollView.addSubview(imageView)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    
+    //MARK:- Page turning controll
+    func runTimer() ->Void {
+        self.timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(scrollPage), userInfo: nil, repeats: true)
+        timer.fire()
     }
     
-//    func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        return 1
-//    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return categories.count
+    func scrollPage() -> Void {
+        if currentPage != 0 && currentPage % imageArray.count == 0 {
+            currentPage = 0
+        }
+        turningPage(page: currentPage)
+        currentPage = currentPage + 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! HomeCollectionViewCell
-        cell.layer.cornerRadius = 8
-        cell.categoryButton.setTitle(categories[indexPath.item], for: .normal)
-        
-        return cell
+    //programmatically turning page for scrollbar
+    func turningPage(page : Int) -> Void {
+        let pageWidth = self.HomeScrollView.frame.width
+        let cp = CGPoint(x: pageWidth * CGFloat(page), y: 0)
+        self.HomeScrollView.setContentOffset(cp, animated: true)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("%d", indexPath.row)
-    }
-    
 }
+
 
