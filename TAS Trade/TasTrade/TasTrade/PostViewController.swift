@@ -11,6 +11,8 @@ import UIKit
 class PostViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
     @IBOutlet weak var tableView: UITableView!
+    var imageView : UIImageView!
+    
     let imgCell = "imgcell"
     let titleCell = "titlecell"
     let descriptionCell = "descriptioncell"
@@ -22,6 +24,7 @@ class PostViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +34,8 @@ class PostViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
+    
+
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let section = indexPath.section
@@ -70,12 +75,14 @@ class PostViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let row = indexPath.row
         if indexPath.section == 0 {
            let cell = tableView.dequeueReusableCell(withIdentifier: self.cells[row], for: indexPath) as! ImageViewCell
+            self.imageView = cell.itemImages
+            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(gestureRecognizer:)))
+            self.imageView.addGestureRecognizer(tapGestureRecognizer)
+            self.imageView.isUserInteractionEnabled = true
             return cell
         }
-  //      if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: self.cells[row + 1])
             return cell!
-     //   }
         
     }
 }
