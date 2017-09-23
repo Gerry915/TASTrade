@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pFH-yR-3xn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pFH-yR-3xn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,15 +52,18 @@
                                                 <rect key="frame" x="0.0" y="28" width="375" height="166"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XP3-Tl-QeU" id="q1j-gP-fJa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="165.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="addimag" translatesAutoresizingMaskIntoConstraints="NO" id="Qgd-KI-WiS">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="addimag" translatesAutoresizingMaskIntoConstraints="NO" id="Qgd-KI-WiS">
                                                             <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
                                                         </imageView>
                                                     </subviews>
                                                 </tableViewCellContentView>
+                                                <constraints>
+                                                    <constraint firstItem="Qgd-KI-WiS" firstAttribute="height" secondItem="XP3-Tl-QeU" secondAttribute="height" id="F44-Tu-jVA"/>
+                                                    <constraint firstItem="Qgd-KI-WiS" firstAttribute="width" secondItem="XP3-Tl-QeU" secondAttribute="width" id="Xk2-va-G8P"/>
+                                                </constraints>
                                                 <connections>
                                                     <outlet property="itemImages" destination="Qgd-KI-WiS" id="W8M-Ye-8pv"/>
                                                 </connections>
@@ -69,17 +72,20 @@
                                                 <rect key="frame" x="0.0" y="194" width="375" height="55"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NnB-eM-HnD" id="U6h-am-DI2">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFk-Dm-4rn">
-                                                            <rect key="frame" x="0.0" y="23" width="97" height="30"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFk-Dm-4rn">
+                                                            <rect key="frame" x="0.0" y="23" width="97" height="29"/>
                                                             <color key="textColor" white="0.51000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="eFk-Dm-4rn" firstAttribute="width" secondItem="U6h-am-DI2" secondAttribute="width" id="sPn-rU-lEa"/>
+                                                        <constraint firstItem="eFk-Dm-4rn" firstAttribute="height" secondItem="U6h-am-DI2" secondAttribute="height" id="x6b-cM-2xc"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="title" destination="eFk-Dm-4rn" id="DLl-xB-f5f"/>
@@ -89,38 +95,44 @@
                                                 <rect key="frame" x="0.0" y="249" width="375" height="56"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M5M-vR-IQm" id="5zS-G6-PYH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Enter a description for your Ad" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q0o-Eu-Xso">
-                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Enter a description for your Ad" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q0o-Eu-Xso">
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="46"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <color key="textColor" white="0.51000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="q0o-Eu-Xso" firstAttribute="height" secondItem="5zS-G6-PYH" secondAttribute="height" id="R2T-yq-UyC"/>
+                                                        <constraint firstItem="q0o-Eu-Xso" firstAttribute="width" secondItem="5zS-G6-PYH" secondAttribute="width" id="Rro-CG-TGx"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="descriptionTextField" destination="q0o-Eu-Xso" id="eJh-4t-IZT"/>
+                                                    <outlet property="descriptionTextField" destination="q0o-Eu-Xso" id="q4A-94-fWH"/>
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categorycell" rowHeight="57" id="Hvg-3M-Skt" userLabel="CategoryCell" customClass="CategoryCell" customModule="TasTrade" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="305" width="375" height="57"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hvg-3M-Skt" id="R0f-x9-mod">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwm-DP-Vn2">
+                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwm-DP-Vn2">
                                                             <rect key="frame" x="0.0" y="13" width="169" height="30"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" title="Select Category">
                                                                 <color key="titleColor" white="0.51000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
                                                         </button>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Hwm-DP-Vn2" firstAttribute="width" secondItem="R0f-x9-mod" secondAttribute="width" id="K6E-mu-ZRl"/>
+                                                        <constraint firstItem="Hwm-DP-Vn2" firstAttribute="height" secondItem="R0f-x9-mod" secondAttribute="height" id="mV3-K5-tag"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="categoryBtn" destination="Hwm-DP-Vn2" id="SJk-1O-JXg"/>
@@ -133,7 +145,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fwW-hU-1Sp"/>
+                    <navigationItem key="navigationItem" id="fwW-hU-1Sp">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Gl0-fy-23z">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Cef-k1-sj0">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Post"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="6ik-Dd-iPt" id="we0-Dl-Qs8"/>
                     </connections>

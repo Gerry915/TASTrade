@@ -12,7 +12,8 @@ class PostViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     @IBOutlet weak var tableView: UITableView!
     var imageView : UIImageView!
-    
+    var numberOfImages : Int?
+    var imagesArrary : [UIImage]?
     let imgCell = "imgcell"
     let titleCell = "titlecell"
     let descriptionCell = "descriptioncell"
@@ -20,13 +21,26 @@ class PostViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     let cells = ["imgcell","titlecell", "descriptioncell", "categorycell"]
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         
     }
-
+    
+    func TapDescriptionTextField(gestureRecognizer : UITapGestureRecognizer) -> Void {
+        let cell = tableView.cellForRow(at: IndexPath(row: 1, section: 1)) as! DescriptionCell
+        cell.descriptionTextField.text = ""
+        cell.descriptionTextField.becomeFirstResponder()
+    }
+    
+    func tapTitle(gestureRecognizer: UITapGestureRecognizer) -> Void {
+        let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 1)) as! TitleCell
+        cell.title.text = ""
+        cell.title.becomeFirstResponder()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -58,7 +72,7 @@ class PostViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         return 0
     }
-    
+ 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
@@ -81,8 +95,19 @@ class PostViewController: UIViewController, UITableViewDataSource, UITableViewDe
             self.imageView.isUserInteractionEnabled = true
             return cell
         }
-            let cell = tableView.dequeueReusableCell(withIdentifier: self.cells[row + 1])
-            return cell!
         
+        if self.cells[row + 1] == "descriptioncell" {
+            let cell = tableView.dequeueReusableCell(withIdentifier: self.cells[row + 1], for: indexPath) as! DescriptionCell
+            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(TapDescriptionTextField(gestureRecognizer:)))
+            cell.descriptionTextField.addGestureRecognizer(tapGestureRecognizer)
+            return cell
+        } else if self.cells[row + 1] == "categorycell" {
+            let cell = tableView.dequeueReusableCell(withIdentifier: self.cells[row + 1], for: indexPath) as! CategoryCell
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: self.cells[row + 1], for: indexPath) as! TitleCell
+            cell.title.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tapTitle(gestureRecognizer:))))
+            return cell
+        }
     }
 }

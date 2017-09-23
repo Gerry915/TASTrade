@@ -18,14 +18,17 @@ extension PostViewController{
             let option = PHImageRequestOptions()
             var thumbail = UIImage()
             option.isSynchronous = true
-            let size = CGSize(width: 100, height: 100)
-            for asset in assets {
-                
-                manager.requestImage(for: asset, targetSize: self.imageView.frame.size, contentMode: .aspectFit, options: option, resultHandler: { (result, info) in
-                    thumbail = result!
-                })
+            if assets != nil {
+                self.imagesArrary = [UIImage]()
+                for asset in assets {
+                    manager.requestImage(for: asset, targetSize: self.imageView.frame.size, contentMode: .aspectFit, options: option, resultHandler: { (result, info) in
+                        thumbail = result!
+                        self.imagesArrary?.append(thumbail)
+                    })
+                }
+                //set the first image as the presented photos on postview
+                self.imageView.image = self.imagesArrary?[0]
             }
-            self.imageView.image = thumbail
         }
     }
 }
