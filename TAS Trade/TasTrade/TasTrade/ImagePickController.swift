@@ -11,7 +11,6 @@ import Photos
 
 extension PostViewController{
     func imageTapped(gestureRecognizer : UITapGestureRecognizer) -> Void {
-
         self.presentHGImagePicker(maxSelected: 4) { (assets) in
             print(assets.count)
             let manager = PHImageManager.default()

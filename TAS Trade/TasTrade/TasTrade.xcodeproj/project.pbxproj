@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63340FA01F7689C20061A74D /* PostTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63340F9F1F7689C20061A74D /* PostTableView.swift */; };
+		63340FA21F768A4F0061A74D /* TableViewEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63340FA11F768A4F0061A74D /* TableViewEventController.swift */; };
 		63A5E4AC1F6CBDCC00125343 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A5E4AB1F6CBDCC00125343 /* MainViewController.swift */; };
 		63A5E4B61F6CBF1900125343 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A5E4B51F6CBF1900125343 /* Home.storyboard */; };
 		63A5E4B81F6CC0A500125343 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A5E4B71F6CC0A500125343 /* HomeViewController.swift */; };
@@ -43,6 +45,8 @@
 		0A6FAE3E0CB15DFBA4322082 /* Pods-TasTrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasTrade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TasTrade/Pods-TasTrade.debug.xcconfig"; sourceTree = "<group>"; };
 		10CFEA5E76E45320D7A512BB /* Pods_TasTrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TasTrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3B042F482914BE8CEA46CA /* Pods-TasTrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasTrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-TasTrade/Pods-TasTrade.release.xcconfig"; sourceTree = "<group>"; };
+		63340F9F1F7689C20061A74D /* PostTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableView.swift; sourceTree = "<group>"; };
+		63340FA11F768A4F0061A74D /* TableViewEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewEventController.swift; sourceTree = "<group>"; };
 		63A5E4AB1F6CBDCC00125343 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		63A5E4B51F6CBF1900125343 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		63A5E4B71F6CC0A500125343 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 				63C04BC01F734A7700BB2A8D /* TitleCell.swift */,
 				63C04BC21F734A8600BB2A8D /* DescriptionCell.swift */,
 				63C04BC41F734A9300BB2A8D /* CategoryCell.swift */,
+				63340F9F1F7689C20061A74D /* PostTableView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				63A5E4C41F6CCCE700125343 /* Post.storyboard */,
 				63A5E4C61F6CCDB600125343 /* PostViewController.swift */,
 				63C04BD31F760C8C00BB2A8D /* ImagePickController.swift */,
+				63340FA11F768A4F0061A74D /* TableViewEventController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -426,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63C04BCE1F76095F00BB2A8D /* HGImagePickerCell.swift in Sources */,
+				63340FA01F7689C20061A74D /* PostTableView.swift in Sources */,
 				63C04BCF1F76095F00BB2A8D /* HGImageCollectionViewController.swift in Sources */,
 				63C04BD01F76095F00BB2A8D /* HGImageCollectionViewCell.swift in Sources */,
 				63C04BBB1F73304800BB2A8D /* HomeScrollBarView.swift in Sources */,
@@ -434,6 +441,7 @@
 				63A5E4B81F6CC0A500125343 /* HomeViewController.swift in Sources */,
 				63C04BD41F760C8C00BB2A8D /* ImagePickController.swift in Sources */,
 				63C04BC11F734A7700BB2A8D /* TitleCell.swift in Sources */,
+				63340FA21F768A4F0061A74D /* TableViewEventController.swift in Sources */,
 				63A5E4C71F6CCDB600125343 /* PostViewController.swift in Sources */,
 				63C04BBF1F733DD400BB2A8D /* ImageViewCell.swift in Sources */,
 				63C04BB71F70D4EB00BB2A8D /* HomeCollectionView.swift in Sources */,

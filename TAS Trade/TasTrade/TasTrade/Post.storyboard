@@ -146,11 +146,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="fwW-hU-1Sp">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="Gl0-fy-23z">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Cef-k1-sj0">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="qqC-Ry-LZQ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4xc-C7-yFV">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Post"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="PostBtnPressDown:" destination="QMC-fm-x2I" eventType="touchUpInside" id="cd0-fw-MyD"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
