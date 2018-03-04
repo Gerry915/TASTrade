@@ -8,14 +8,29 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-
+class HomeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
+    @IBOutlet weak var HomeCollectionView: UICollectionView!
+    @IBOutlet weak var HomeScrollView: UIScrollView!
+    var timer : Timer!
+    var currentPage : Int = 0
+    var imageArray = [#imageLiteral(resourceName: "1"),#imageLiteral(resourceName: "DSC_0334"),#imageLiteral(resourceName: "DSC_0348")]
+    
+    // also enter this string as the cell identifier in the storyboard
+    let reuseIdentifier = "cell"
+    var categories = ["Rental","xx","xx","yy","sss","ccc","sss1","tt"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-        // Do any additional setup after loading the view.
+        HomeCollectionView.delegate = self
+        HomeCollectionView.dataSource = self
+        HomeScrollView.delegate = self
         
+        ///scrollbar
+        setUpScrollBar()
+        
+        //run the timer for page turning
+        runTimer()
+      
         //asjdklsajdklasdjlkas
         //sadjlkasdj
         //jsahahahahhaha
@@ -35,18 +50,7 @@ class HomeViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
