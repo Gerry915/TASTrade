@@ -30,6 +30,22 @@ class HomeViewController: UIViewController,UICollectionViewDataSource,UICollecti
         
         //run the timer for page turning
         runTimer()
+      
+        //asjdklsajdklasdjlkas
+        //sadjlkasdj
+        //jsahahahahhaha
+        //Gerry
+        
+        //Gerry new
+        //Gerry change
+        //Gerry 3
+        //New changes
+        
+        //2342342342342342
+        //asfsdfdsaf
+        /*asdfdsafdsafsfds*/
+    
+        
     }
 
     override func didReceiveMemoryWarning() {
